@@ -3,7 +3,7 @@
 #define N 100
 void moyenne(int etudiant[N],int compteur)
 {
-    int i,s=0,j,tmp,cpt=0;
+    int i,j,tmp,cpt=0;
     for(i=0;i<=compteur;i++)
     {
         printf("\nmoyenne d'etudiant:");
