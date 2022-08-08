@@ -8,7 +8,6 @@ void moyenne(int etudiant[N],int compteur)
     {
         printf("\nmoyenne d'etudiant:");
         scanf("%d",&etudiant[i]);
-        s=s+etudiant[i];
     }
     for(i=0;i<compteur;i++)
     {
