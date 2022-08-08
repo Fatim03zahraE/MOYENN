@@ -51,20 +51,22 @@ int main()
 {
   int etud1[13],etud2[15],etud3[28],moy1,moy2,n,j,i;
   printf("premiere class\n");
-  etud1[13]=moyenne(etud1,13);
-  minmax(&etud1,13);
+  moyenne(etud1,13);
+  minmax(etud1,13);
   printf("le nombre des eleves qui ont obtenu une moyenne superieur ou egale10:  %d", nbreleve(etud1,13));
   printf("\n*********************************");
   printf("\ndeuxieme class\n");
-  etud2[15]=moyenne(&etud2,15);
-  minmax(&etud2,15);
+  moyenne(&etud2,15);
+  minmax(etud2,15);
   printf("le nombre des eleves qui ont obtenu une moyenne superieur ou egale10:  %d", nbreleve(etud2,15));
   printf("\n\n**********************************************************************\n\n");
-  for(i=0;i<3;i++)
+  etud1[13]=moyenne(etud1,13);
+   etud2[15]=moyenne(&etud2,15);
+  for(i=0;i<13;i++)
   {
       etud3[i]=etud1[i];
   }
-  for(i=0,j=3;j<28&&i<15;i++,j++)
+  for(i=0,j=13;j<28&&i<15;i++,j++)
   {
       etud3[j]=etud2[i];
   }
@@ -76,3 +78,4 @@ int main()
 
     return 0;
 }
+
